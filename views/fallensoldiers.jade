@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1.
+        #{title}
+    if fallen_soldiers.length
+        ul
+            each fallen_soldier, i in fallen_soldiers
+                li
+                    a(href="/" + curr_country + "/" + fallen_soldier.name)= fallen_soldier.name
+    else
+        h2.
+            No fallen soldiers from #{curr_country} in our database.

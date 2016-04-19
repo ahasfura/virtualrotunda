@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    h1.
+        Welcome, admins!
+    h3.
+        Please help review the below tribute submissions.
+
+    if pending_tributes.length
+        each pending_tribute, i in pending_tributes
+
+            button.btnAccept(onclick="accept('#{pending_tribute._id}','#{pending_tribute.username}','#{pending_tribute.tribute}')") Accept
+            button.btnReject(onclick="reject('#{pending_tribute._id}')") Reject
+            a= pending_tribute.tribute
+            br
+
+    else
+        a
+            No pending tributes. All done!

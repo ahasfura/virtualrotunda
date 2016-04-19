@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1.
+        #{title}
+
+    ul
+        each country, i in countries
+            li
+                a(href="./" + country)= country

@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    h1.
+        #{title}
+
+    form#formAddTribute(name="addtribute",method="post",action="/addtribute")
+        input#inputUserHometown(type="text", placeholder="User's Hometown", name="userhometown")
+        input#inputUserName(type="text", placeholder="User's Name", name="username")
+        input#inputUserTribute(type="text", placeholder="Tribute", name="usertribute")
+        button#btnSubmit(type="submit") submit
+
+    if tributes.length
+        ul
+            each tribute, i in tributes
+                li
+                    a= tribute
+    else
+        h2.
+            No tributes for #{title} yet.
