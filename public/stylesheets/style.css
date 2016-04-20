@@ -3,6 +3,34 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+h1 {
+  color: #880000;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(230,230,230);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(250,250,250);
+}
+
+div.tribute {
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+table, th, td {
+    width: 100%;
+}
+th, td {
+    padding: 15px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.tribute_name{
+  font-size: 75px;
+  color: #880000;
 }
