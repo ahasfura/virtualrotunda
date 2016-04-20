@@ -4,7 +4,8 @@ block content
     h1.
         #{title}
 
-    ul
+    table
         each country, i in countries
-            li
+            tr
                 a(href="./" + country)= country
+                br
