@@ -7,7 +7,9 @@ var bodyParser = require('body-parser');
 
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('hasfuraa:XXX@ec2-54-88-232-44.compute-1.amazonaws.com:27017/test');
+//var db = monk('root:qLvPJrySXJY8@ec2-52-202-110-70.compute-1.amazonaws.com:27017/test');
+//var db = monk('dbuser:dbuser@ec2-52-202-110-70.compute-1.amazonaws.com:27017/test');
+var db = monk('localhost:27017/test');
 
 var routes = require('./routes/routes');
 var users = require('./routes/users');

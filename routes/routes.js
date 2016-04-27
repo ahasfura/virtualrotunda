@@ -145,7 +145,6 @@ router.post('/addtribute', function(req, res) {
         }
         else {
             // And forward to success page
-            //TODO: make cheesy thank you page to avoid figuring out ajax... lame
             res.redirect("/thankyou");
         }
     });
